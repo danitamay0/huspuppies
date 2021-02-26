@@ -1,27 +1,17 @@
-# Sitioweb
+## Sitioweb
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 10.0.4.
+Este proyecto fue creado en [Angular CLI](https://github.com/angular/angular-cli) version 10.0.4.
 
-## Development server
+*se puede AGREGAR productos al carrito de compra
+*La configuración del tema esta a nivel global
+*Se usaron observables y subjecs para compartir información entre componentes
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
 
-## Code scaffolding
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
+## Instalar DEPENDENCIAS NPM
+Ejectura en consola npm install o npm i
 
-## Build
+## Desplegar Servidor
 
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory. Use the `--prod` flag for a production build.
+EJECTAR `ng serve`. Dirigirse a `http://localhost:4200/`. 
 
-## Running unit tests
-
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
-
-## Running end-to-end tests
-
-Run `ng e2e` to execute the end-to-end tests via [Protractor](http://www.protractortest.org/).
-
-## Further help
-
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI README](https://github.com/angular/angular-cli/blob/master/README.md).

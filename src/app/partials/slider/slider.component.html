@@ -1,0 +1,27 @@
+<section class="main"> 
+
+   <div class="titulo">
+       <p> {{titulo}}</p></div> 
+
+  <owl-carousel-o  class="principal" [options]="customOptions">
+    <ng-template [width]="50"  *ngFor="let prod of productos" carouselSlide>
+        <app-card-carousel [buttons]="buttons" [producto]="prod" ></app-card-carousel>
+    </ng-template>  
+  
+  </owl-carousel-o>
+<div class="subtitle">
+
+    <div class="sub">
+      <p> productos recomendados </p>
+      
+  </div> 
+  <hr>
+</div>
+<owl-carousel-o  [options]="customOptions">
+ <ng-template [width]="50"  *ngFor="let prod of productos" carouselSlide>
+     <app-card-carousel [buttons]="'false'" [producto]="prod" ></app-card-carousel>
+ </ng-template>  
+
+</owl-carousel-o>
+</section>
+

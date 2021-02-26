@@ -1,0 +1,24 @@
+.tool{
+    justify-content: center;
+    width: 100%;
+}
+.tool,nav{
+    padding: 0 120px ;
+}
+nav{
+
+    background-color: rgb(167, 167, 167);
+    ul{
+        display: flex;
+        justify-content: flex-end;
+      
+        li{
+            margin : 5px;
+            a{
+                text-transform: uppercase;
+                color: #000;
+                font-size: 12px;
+            }
+        }
+    }
+}

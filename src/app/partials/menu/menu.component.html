@@ -1,0 +1,23 @@
+<section >
+    <div class="logo">
+        <img src="/assets/img/logo.jpg" alt="image">
+    </div>
+    <div class="search">
+        <mat-form-field >
+            <mat-label>Buscar</mat-label>
+            <input  matInput placeholder="Buscar">
+            <mat-icon matSuffix>navigate_next</mat-icon>
+        </mat-form-field>
+        <h4 class="primary-color">ENVIOS GRATIS PARA PEDIDOS SUPERIORES A {{ minPedido | currency }}</h4>
+    </div>
+</section>
+<nav>
+   
+        <ul>
+            <li *ngFor="let item of menuItems"> <a href="#">{{item.nombre}}</a> </li>
+        </ul>
+        <app-carrito-compras></app-carrito-compras>
+</nav>
+<hr>
+
+

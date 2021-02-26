@@ -1,0 +1,43 @@
+@import '~@angular/material/theming';
+@import '../../../theme.scss';
+
+.primary-color {
+    color: mat-color($my-primary) !important;
+  }
+  .accent-color {
+    color: mat-color($my-accent) !important;
+  }
+
+  .texto{
+    color: rgb(129, 125, 125);
+  }
+div{
+    margin-top: 500px;
+}
+h2{
+    margin-top: 5px;
+    font-size: 18px;
+    text-transform: uppercase;
+}
+h3{
+    font-size: 20px;
+}
+section{
+    
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+img{
+    height: 150px  !important;
+    width: 150px  !important;
+    margin:0;
+    padding:0;
+}
+button{
+    border-radius: 0 !important;
+}
+
+

@@ -1,0 +1,36 @@
+@import '~@angular/material/theming';
+@import '../../theme.scss';
+
+.primary-color {
+    color: mat-color($my-primary) !important;
+  }
+  .accent-color {
+    color: mat-color($my-accent) !important;
+  }
+
+  .texto{
+    color: rgb(129, 125, 125);
+  }
+div{
+    margin-top: 500px;
+}
+h2{
+    font-size: 30px;
+    text-transform: uppercase;
+}
+h3{
+    font-size: 20px;
+   margin-bottom: 0;
+}
+
+p{
+    margin-top: 20px;
+}
+
+.header{
+   
+        h4,h2,h3 {
+            margin: 0;
+            padding: 0;
+        }
+}

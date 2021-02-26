@@ -1,0 +1,111 @@
+@import '~@angular/material/theming';
+@import '../../theme.scss';
+
+.primary-color {
+  color: mat-color($my-primary) !important;
+}
+.accent-color {
+  color: mat-color($my-accent) !important;
+}
+.codigo {
+    color: rgb(194, 194, 194);
+}
+
+button{
+    border-radius: 0 !important;
+}
+h2{
+    font-size: 30px;
+    text-transform: uppercase;
+}
+h3{
+    font-size: 20px;
+}
+
+h4,h2,h3 {
+    margin: 0;
+    padding: 0;
+}
+.principal{
+   margin-top: 100px;
+}
+
+.body{
+ 
+    margin-bottom: 20px;
+    
+}
+.body>div{
+   
+        margin-bottom: 20px;
+  
+}
+
+.color{
+    margin-top: 20px;
+}
+
+.tallas{
+    div{
+        margin-top: 20px ;
+      
+        cursor: pointer;
+        width: 50px;
+        height: 50px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        p{
+            margin:0;
+            padding:0;
+        }
+    }
+ 
+}
+.header{
+    margin-bottom: 10px;
+}
+.guia{
+    margin-top: 20px;
+    text-decoration: underline;
+}
+.principal{
+    margin:0;
+    padding:0;
+}
+.footer{
+   
+}
+
+.images{
+ 
+    img{
+        width: 70%;
+    }
+}
+
+.image-min{
+    width: 60px;
+    padding: 5px;
+    border: solid rgb(194, 194, 194) ;
+    img{
+        width: 100%;
+    }
+}
+
+.images,.image-min{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+}
+
+
+.selected{
+
+    background: rgb(236, 232, 232);
+}
+
+.noSelected{
+    background: rgb(194, 194, 194);
+}

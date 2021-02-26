@@ -1,0 +1,8 @@
+<section>
+    <img  class="productos" src="/assets/img/{{producto.foto}}" alt="">
+    <h2 class="accent-color" >{{producto.nombre}}</h2>
+    <h3 class="primary-color">{{producto.precio}}</h3>
+    <button (click)="agregar(producto)" *ngIf="buttons == 'true'" mat-flat-button color="{{producto.agregado ? 'accent' : 'primary' }}" > {{producto.agregado ? 'ELIMINAR DEL' : 'AGREGAR AL'}}  CARRITO</button>
+    
+</section>
+

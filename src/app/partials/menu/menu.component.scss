@@ -1,0 +1,49 @@
+@import '~@angular/material/theming';
+@import '../../../theme.scss';
+
+.primary-color {
+  color: mat-color($my-primary) !important;
+}
+section{
+    margin-top: 10px;
+    display: flex;
+    justify-content: space-between;
+    padding: 0 120px 0 120px;
+    img{
+        width: 110px;
+    }
+    .search{
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-end;
+        align-items: flex-end;
+        mat-form-field {
+            width: 60%;
+        }
+    }
+}
+.tol{
+    justify-content: center;
+    width: 100%;
+}
+.tol,nav{
+    padding: 0 120px ;
+}
+nav{
+    padding: 5px 120px;
+    display: flex;
+    justify-content: space-between;
+   align-items: center;
+    ul{
+        display: flex;
+        justify-content: flex-start;
+        li{
+            margin-right : 20px;
+            a{
+                text-transform: uppercase;
+                color: #000;
+                font-size: 15px;
+            }
+        }
+    }
+}

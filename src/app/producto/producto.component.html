@@ -1,0 +1,35 @@
+<div class="content" fxLayout="row" fxLayout.xs="column" fxFlexFill>
+    <section class="images" fxFlex="50"  fxFlex.xs="55">
+        <img src="/assets/img/{{prod.foto}}"  alt="">
+       
+    </section>
+
+    <section fxFlex="50"  fxFlex.xs="45">
+      <div class="header">
+            <h2 class="accent-color">{{prod.nombre}}</h2>
+            <h3 class="primary-color">{{prod.precio | currency}}</h3>
+            <h4 class="codigo">Cod. producto {{prod.referencia}}</h4>
+      </div > 
+        <div class="body">
+            <div class="accent-color">
+                <h3>Color</h3>
+                <div class="image-min">
+                    
+                    <img src="/assets/img/{{prod.foto}}"  alt="">
+                </div>
+            </div>
+            <div>
+                <h3 class="principal accent-color">Talla {{tallaSelected}}</h3>
+                <section  class="tallas" fxLayout="row wrap" fxLayoutGap="32px" fxLayoutAlign="flex-start">
+                    <div *ngFor="let t of tallas; index as i" [ngClass]="{'selected': t.selected,'noSelected': !t.selected}" (click)="select(i)" fxFlex="0 1 calc(20% - 32px)"  ><p>{{t.numero}}</p></div>                    
+                </section>
+                <h3 class="guia accent-color">Guia Tallas</h3>
+            </div>
+        </div>
+        <div class="footer">
+        
+           <button (click)="agregar()"  mat-flat-button color="{{prod.agregado ? 'accent' : 'primary' }}" > {{prod.agregado ? 'ELIMINAR DEL' : 'AGREGAR AL'}} CARRITO</button>
+
+        </div>
+    </section>
+</div>
